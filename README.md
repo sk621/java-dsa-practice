@@ -17,7 +17,7 @@ A collection of Java programs and Data Structures & Algorithms (DSA) practice pr
 - Bit Manipulation
 
 ## 📂 Project Structure
-
+```text
 Java Programs
 │
 ├── src
@@ -32,7 +32,7 @@ Java Programs
 │
 ├── README.md
 └── .gitignore
-
+```
 ## 🚀 Technologies Used
 
 - Java
