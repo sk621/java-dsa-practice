@@ -55,7 +55,7 @@ public class RotateArray2 {
         System.out.println();
 
         reverseArray(arr,arr.length-ksteps, arr.length-1);
-        reverseArray(arr,0, arr.length-ksteps);
+        reverseArray(arr,0, arr.length-ksteps-1);
         reverseArray(arr,0, arr.length-1);
 
         System.out.println("The rotated array is:");
