@@ -2,7 +2,7 @@ package Arrays;
 
 import java.util.Scanner;
 
-public class SumArray {
+public class MaxArray {
 
     static Scanner scn = new Scanner(System.in);
 
@@ -12,21 +12,24 @@ public class SumArray {
 
             System.out.print("Enter element"+i+": ");
             arr[i] = scn.nextInt();
+
         }
     }
-    static int sumArray(int[] arr){
 
-        int sum = 0;
+    static int maxValue(int[] arr){
+
+        int max = arr[0];
 
         for(int i=0;i<arr.length;i++){
 
-            sum += arr[i];
+            if(arr[i]>max)
+                max= arr[i];
         }
 
-        return sum;
+        return max;
     }
 
-    public static void main(String[] args){
+    static void main (String[] args){
 
         System.out.print("Enter size of the array: ");
 
@@ -36,6 +39,7 @@ public class SumArray {
 
         inputArray(arr);
 
-        System.out.print("The sum of all elements in the array is: "+sumArray(arr));
+        System.out.print("The maximum element in the array is: "+maxValue(arr));
     }
+
 }

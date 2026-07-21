@@ -2,7 +2,7 @@ package Arrays;
 
 import java.util.Scanner;
 
-public class SumArray {
+public class CountLarger {
 
     static Scanner scn = new Scanner(System.in);
 
@@ -14,19 +14,19 @@ public class SumArray {
             arr[i] = scn.nextInt();
         }
     }
-    static int sumArray(int[] arr){
 
-        int sum = 0;
+    static int checkArray(int[]arr,int num) {
 
-        for(int i=0;i<arr.length;i++){
+        int count = 0;
+        for(int ele: arr){
 
-            sum += arr[i];
+            if(ele > num)
+                count++;
         }
-
-        return sum;
+        return count;
     }
 
-    public static void main(String[] args){
+    static void main (String[] args){
 
         System.out.print("Enter size of the array: ");
 
@@ -36,6 +36,9 @@ public class SumArray {
 
         inputArray(arr);
 
-        System.out.print("The sum of all elements in the array is: "+sumArray(arr));
+        System.out.print("Enter an element : ");
+        int num = scn.nextInt();
+
+        System.out.print("The no. of elements greater than"+num+"is: "+checkArray(arr,num));
     }
 }

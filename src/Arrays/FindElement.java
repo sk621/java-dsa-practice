@@ -2,7 +2,7 @@ package Arrays;
 
 import java.util.Scanner;
 
-public class SumArray {
+public class FindElement {
 
     static Scanner scn = new Scanner(System.in);
 
@@ -14,19 +14,21 @@ public class SumArray {
             arr[i] = scn.nextInt();
         }
     }
-    static int sumArray(int[] arr){
 
-        int sum = 0;
+    static int checkArray(int[] arr,int num){
 
+        int idx = -1;
         for(int i=0;i<arr.length;i++){
 
-            sum += arr[i];
+            if(arr[i] == num){
+                idx = i;
+                break;
+            }
         }
-
-        return sum;
+        return idx;
     }
 
-    public static void main(String[] args){
+    static void main (String[] args){
 
         System.out.print("Enter size of the array: ");
 
@@ -36,6 +38,10 @@ public class SumArray {
 
         inputArray(arr);
 
-        System.out.print("The sum of all elements in the array is: "+sumArray(arr));
+        System.out.print("Enter an element to find in the array: ");
+        int num = scn.nextInt();
+
+        System.out.print("The element in the array is present at: "+checkArray(arr,num));
     }
 }
+
