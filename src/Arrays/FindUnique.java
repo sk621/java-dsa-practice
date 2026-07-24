@@ -32,11 +32,9 @@ public class FindUnique {
                     }
                 }
             }
-
             if(isUnique){
                 return arr[i];
             }
-
         }
         return 0;
     }
