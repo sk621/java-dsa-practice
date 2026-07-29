@@ -27,28 +27,27 @@ public class SortSquare {
         System.out.println();
     }
 
-    static void sortArray(int[] arr){
+    static void sqrArray(int[] arr){
 
-        int[] sqArray = new int[arr.length];
+        int[] squareArr = new int[arr.length];
 
         int left = 0;
         int right = arr.length-1;
         int i = arr.length-1;
 
-        while (i>0){
+        while (left<right){
 
             if(Math.abs(arr[right]) >= Math.abs(arr[left])){
-                sqArray[i] = arr[right] * arr[right];
+                squareArr[i--] = arr[right] * arr[right];
                 right--;
             }
-            else{
-                sqArray[i] = arr[left] * arr[left];
+            else {
+                squareArr[i--] = arr[left] * arr[left];
                 left++;
             }
-            i--;
         }
 
-        printArray(sqArray);
+        printArray(squareArr);
 
     }
 
@@ -67,7 +66,7 @@ public class SortSquare {
 
         System.out.println("The Square array is:");
 
-        sortArray(arr);
+        sqrArray(arr);
 
     }
 
