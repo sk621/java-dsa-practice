@@ -18,10 +18,9 @@ public class FindUnique {
 
     static int findUnique(int[] arr){
 
-        boolean isUnique = false;
-
         for(int i=0;i<arr.length;i++){
-           isUnique = true;
+
+          boolean isUnique = true;
 
             for(int j=0;j< arr.length;j++){
 
