@@ -9,7 +9,6 @@ public class CountOccurrence {
     static void inputArray(int[] arr){
 
         for(int i=0;i<arr.length;i++){
-
             System.out.print("Enter element"+i+": ");
             arr[i] = scn.nextInt();
         }
@@ -20,7 +19,6 @@ public class CountOccurrence {
         int count = 0;
 
         for(int ele: arr){
-
             if(ele == num)
                 count++;
         }
@@ -37,10 +35,13 @@ public class CountOccurrence {
 
         inputArray(arr);
 
-        System.out.print("Enter an element to count it occurence in the array: ");
+        System.out.print("Enter an element to count its occurence in the array: ");
+
         int num = scn.nextInt();
 
-        System.out.print("The element in the array is present at: "+countArray(arr,num));
+        int count = countArray(arr,num);
+
+        System.out.print(num+" is present " + count + " times in the array ");
     }
 }
 
