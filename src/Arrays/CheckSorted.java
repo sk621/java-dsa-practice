@@ -17,16 +17,13 @@ public class CheckSorted {
 
     static boolean checkArray(int[] arr) {
 
-        boolean isSorted = true;
-
         for(int i=0;i<arr.length-1;i++){
 
             if(arr[i]>arr[i+1]){
-                isSorted = false;
-                break;
+                return false;
             }
         }
-        return isSorted;
+        return true;
     }
 
     static void main (String[] args){
@@ -39,7 +36,9 @@ public class CheckSorted {
 
         inputArray(arr);
 
-        if(checkArray(arr)) {
+        boolean isSorted = checkArray(arr);
+
+        if(isSorted) {
             System.out.print("The array is sorted");
         } else
             System.out.print("The array is not sorted");
