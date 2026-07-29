@@ -20,6 +20,8 @@ public class ReverseArray {
         for(int ele: arr){
             System.out.print(ele+" ");
         }
+        System.out.println();
+
     }
 
     static void reverse(int[] arr){
@@ -28,7 +30,6 @@ public class ReverseArray {
         int end = arr.length-1;
 
         while(start<arr.length/2){
-
             int temp = arr[start];
             arr[start] = arr[end];
             arr[end] = temp;
@@ -53,8 +54,6 @@ public class ReverseArray {
         printArray(arr);
 
         reverse(arr);
-
-        System.out.println();
 
         System.out.println("After reverse the array is:");
 
