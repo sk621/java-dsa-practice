@@ -32,13 +32,13 @@ public class MinMax {
 
         int min = arr[0];
 
-        for(int i=0;i<arr.length;i++){
+        for(int ele: arr){
 
-            if(arr[i]>max){
-                max = arr[i];
+            if(ele > max){
+                max = ele;
             }
-            if(arr[i]<min && arr[i]!=max)
-                min = arr[i];
+            if(ele < min && ele != max)
+                min = ele;
         }
 
         return new int[] {min,max};
