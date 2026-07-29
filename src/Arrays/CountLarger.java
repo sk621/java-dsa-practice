@@ -19,7 +19,6 @@ public class CountLarger {
 
         int count = 0;
         for(int ele: arr){
-
             if(ele > num)
                 count++;
         }
@@ -37,6 +36,7 @@ public class CountLarger {
         inputArray(arr);
 
         System.out.print("Enter an element : ");
+
         int num = scn.nextInt();
 
         System.out.print("The no. of elements greater than"+num+"is: "+checkArray(arr,num));
