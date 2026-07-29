@@ -36,7 +36,7 @@ public class FrequencyArray {
         }
     }
 
-    static void printFrequency(int[] freqArr, int query){
+    static void checkFrequency(int[] freqArr, int query){
 
         while(query > 0){
 
@@ -67,7 +67,7 @@ public class FrequencyArray {
         System.out.print("Enter no. of queries: ");
         int query = scn.nextInt();
 
-        printFrequency(freqArr,query);
+        checkFrequency(freqArr,query);
 
     }
 }
