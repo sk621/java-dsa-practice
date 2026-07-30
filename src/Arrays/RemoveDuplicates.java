@@ -29,19 +29,19 @@ public class RemoveDuplicates {
     static int removeduplicates(int[] arr){
 
         int i = 0;
-        //store unique numbers
-        for(int j=0;j<arr.length;j++){
+        for(int j=0;j<arr.length;j++){   //store unique numbers
 
             if(arr[i] != arr[j]) {
                 i++;
                 arr[i] = arr[j];
+                j++;
             }
         }
-        //store 0 in rest places
-        for(int j=i+1;j<arr.length;j++){
+
+        for(int j=i+1;j<arr.length;j++){  //store 0 in rest places
             arr[j] = 0;
         }
-        return i;
+        return i+1;
     }
 
     static void main(String[] args){
