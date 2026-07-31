@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SubsequenceSum {
+
     static Scanner scn = new Scanner(System.in);
 
     static void inputArray(int[] arr){
@@ -30,7 +31,7 @@ public class SubsequenceSum {
         res += arr[i];
         printSub(arr,i+1,list,res,sum);
 
-        list.remove(Integer.valueOf(arr[i]));
+        list.removeLast();
         res -= arr[i];
         printSub(arr,i+1,list,res,sum);
     }
