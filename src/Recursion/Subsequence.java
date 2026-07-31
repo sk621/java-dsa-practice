@@ -28,7 +28,7 @@ public class Subsequence {
         list.add(arr[i]);
         printSub(arr,i+1,list);
 
-        list.remove(Integer.valueOf(arr[i]));
+        list.removeLast();
         printSub(arr,i+1,list);
     }
 
