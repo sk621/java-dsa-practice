@@ -19,7 +19,7 @@ public class SearchInRotatedArrII {
             if(arr[mid] == target)
                 return mid;
 
-            if(arr[low] <= arr[mid] && arr[mid] <= arr[high]){
+            if(arr[low] == arr[mid] && arr[mid] == arr[high]){
                 low++;
                 high--;
             }
@@ -45,9 +45,9 @@ public class SearchInRotatedArrII {
 
     public static void main(String[] args){
 
-        int[] arr = {3,3,1,2,3,3,3};
+        int[] arr = {3,3,3,2,3,3,3};
 
-        int targetElement = 1;
+        int targetElement = 2;
 
         System.out.print("The index of the target element is: " + findTargetIdx(arr,targetElement));
     }
