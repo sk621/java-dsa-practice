@@ -3,42 +3,6 @@ package binarysearch;
 
 public class NumberOfRotation {
 
-//    static int countRotation(int[] arr){
-//
-//        int count = -1;
-//        int low = 0;
-//        int high = arr.length-1;
-//        int min = Integer.MAX_VALUE;
-//
-//        while(low <= high){
-//
-//            int mid = ((low + high - low)/2);
-//
-//            if(arr[mid] < min){
-//                min = arr[mid];
-//                count = mid;
-//            }
-//            if(arr[low] == arr[mid] && arr[mid] == arr[high]){
-//                low++;
-//                high--;
-//            }
-//            else if(arr[low] <= arr[mid]){
-//                if(arr[low] <= min) {
-//                    min = arr[low];
-//                    count = low;
-//                }
-//                    low = mid + 1;
-//            }
-//            else {
-//                high = mid - 1;
-//                if(arr[mid] <= min){
-//                    min = arr[mid];
-//                }
-//            }
-//        }
-//        System.out.println(min);
-//        return count;
-//    }
 static int countRotation(int[] arr){
 
     int low = 0;
@@ -50,6 +14,7 @@ static int countRotation(int[] arr){
 
         int mid = low + ((high - low) / 2);
 
+//       check for mid
         if (arr[mid] < min) {
             min = arr[mid];
             count = mid;
