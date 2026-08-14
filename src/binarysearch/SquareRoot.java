@@ -16,7 +16,7 @@ public class SquareRoot {
         if(num <= 1){
             return num;
         }
-        for(int i=1;i<=num/2;i++){
+        while(low <= high){
 
             int mid = low + ((high - low)/2);
 
