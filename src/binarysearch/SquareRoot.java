@@ -10,8 +10,8 @@ public class SquareRoot {
     static int findSquareRoot(int num){
 
         int squareRoot = 0;
-        int low = 0;
-        int high = num;
+        int low = 1;
+        int high = num/2;
 
         if(num <= 1){
             return num;
