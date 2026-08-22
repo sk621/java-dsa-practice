@@ -44,9 +44,6 @@ public class SearchMinimum {
 //            check for right unsorted part
             else {
                 high = mid - 1;
-                if(arr[mid] <= min){
-                    min = arr[mid];
-                }
             }
         }
         return min;
