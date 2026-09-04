@@ -23,7 +23,7 @@ public class StarSquarePattern {
 
         int val = scn.nextInt();
 
-        System.out.print("The star square pattern is:");
+        System.out.println("The star square pattern is:");
 
         printPattern(val);
     }
